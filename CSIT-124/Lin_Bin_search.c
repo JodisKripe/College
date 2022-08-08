@@ -22,7 +22,7 @@ int binary_search(int a[], int n, int ele)
     high = n - 1;
     while (low <= high)
     {
-        mid = (low + high) / 2;
+        mid = (low + high) / 2; 
         if (a[mid] == ele)
         {
             return mid;
