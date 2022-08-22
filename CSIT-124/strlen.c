@@ -4,7 +4,7 @@
 
 void main(){
     char str[]="";
-    gets(&str);
+    gets(str);
     int i, n = 0;
 
     for (i = 0; str[i] != '\0'; i++)
