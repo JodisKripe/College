@@ -16,5 +16,5 @@ void main(){
             sec=array[i];
         }
     }
-    printf("Second largest element is %d\n%d", sec,max);
+    printf("Second largest element is %d", sec);
 }
