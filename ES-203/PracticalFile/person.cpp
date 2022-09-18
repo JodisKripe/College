@@ -20,8 +20,8 @@ class Person{
 };
 
 int main(){
-    Person employees[3];
-    for(int i=0;i<3;i++){
+    Person employees[10];
+    for(int i=0;i<10;i++){
         float salary;
         char name[64],address[64];
         int age;
