@@ -27,5 +27,6 @@ int main(){
     scanf("%d",&n);
     printf("\n");
     towerOfHanoi(n,Source,aux,destination);
+    printf("\n");
     return 0;
 }
