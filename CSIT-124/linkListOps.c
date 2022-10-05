@@ -66,6 +66,19 @@ void deletion(node *head , int pos){
     temp->next = temp->next->next;
 }
 
+int search(node *head , int value){
+    node *temp=head;
+    int count=1;
+    while(temp!=NULL){
+        if(temp->data==value){
+            return count;
+        }
+        count++;
+        temp=temp->next;
+    }
+    return -1;
+}
+
 int main(){
     struct node *head=NULL,*temp,*newnode;
     int choice=1;
@@ -87,8 +100,10 @@ int main(){
     }
     insertion(head,99,4);
     traversal(head);
-    deletion(head,3);
+    deletion(head,2);
     traversal(head);
+    int pos = search(head,99);
+    printf("\nPosition of 99 is %d\n\n",pos);
     return 0;
 }
 
