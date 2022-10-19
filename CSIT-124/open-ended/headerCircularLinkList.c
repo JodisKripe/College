@@ -62,13 +62,16 @@ void insert(node *head, int data , int pos){
 void insertion(node *head, int value , int pos){
     //printf("init");
     node *c=head;
-    node *newNode,*temp;
+    node *newNode,*temp,*headNode;
     newNode=(node*)malloc(sizeof(node));
     newNode->data=value;
     newNode->next=NULL;
     if(head==NULL){
         printf("init");
-        head = newNode;
+        headNode=(node*)malloc(sizeof(node));
+        headNode->data=value;
+        headNode->next=newNode;
+        head = headNode;
         return;
     }
     temp=head;
@@ -78,6 +81,11 @@ void insertion(node *head, int value , int pos){
         return;
     }
     temp=head;
+    if(pos==1){
+        newNode->next = head->next;
+        head->next = newNode;
+        return;
+    }
     for(int i=1;i<pos-1;i++){
         temp=temp->next;
     }
@@ -103,7 +111,7 @@ void delete(node *head, int pos){
 }
 
 void traverse(node *head){
-    node *temp=head;
+    node *temp=head->next;
     if(head==NULL){
         printf("Empty");
     }
@@ -120,14 +128,14 @@ void search(node *head){
     int s;
     printf("Enter the Element to be searched: ");
     scanf("%d",&s);
-    node *temp = head;
-    do{
+    node *temp = head->next;
+    while(temp!=head){
         if(temp->data==s){
             printf("Element found");
             return;
         }
         temp = temp->next;
-    }while(temp!=head);
+    }
     printf("Element not found");
 }
 

@@ -42,46 +42,8 @@ void makePol(node *head){
     }
 }
 
-node* add(node *p1, node *p2){
-    node *temp1=p1,*temp2=p2;
-    node *newNode;
-    newNode=(node *)malloc(sizeof(node));
-    newNode->next=NULL;
-    while(temp1!=NULL && temp2!=NULL){
-        if(temp1->exp==temp2->exp){
-            newNode->coeff=temp1->coeff+temp2->coeff;
-            newNode->exp=temp1->exp;
-            temp1=temp1->next;
-            temp2=temp2->next;
-        }
-        else if(temp1->exp>temp2->exp){
-            newNode->coeff=temp1->coeff;
-            newNode->exp=temp1->exp;
-            temp1=temp1->next;
-        }
-        else{
-            newNode->coeff=temp2->coeff;
-            newNode->exp=temp2->exp;
-            temp2=temp2->next;
-        }
-        newNode=newNode->next;
-    }
-    while(temp1!=NULL){
-        newNode->coeff=temp1->coeff;
-        newNode->exp=temp1->exp;
-        temp1=temp1->next;
-        newNode=newNode->next;
-    }
-    while(temp2!=NULL){
-        newNode->coeff=temp2->coeff;
-        newNode->exp=temp2->exp;
-        temp2=temp2->next;
-        newNode=newNode->next;
-    }
-    return newNode;
-}
 
-int traverse(node *head){
+void traverse(node *head){
     node *temp=head;
     int count=0;
     do{
@@ -89,7 +51,22 @@ int traverse(node *head){
         temp=temp->next;
         count++;
     }while(temp!=NULL);
-    return count;
+}
+
+node* multiply(node *p1, node *p2){
+    node *temp1=p1,*temp2=p2;
+    node *newNode;
+    newNode=(node *)malloc(sizeof(node));
+    newNode->next=NULL;
+    while(temp1!=NULL){
+        while(temp2!=NULL){
+            newNode->coeff=temp1->coeff*temp2->coeff;
+            newNode->exp=temp1->exp+temp2->exp;
+            temp2=temp2->next;
+        }
+        temp1=temp1->next;
+    }
+    return newNode;
 }
 
 int count(node *head){
@@ -111,7 +88,7 @@ int main(){
     makePol(p1);
     traverse(p1);
     makePol(p2);
-    p3=add(p1,p2);
+    p3=multiply(p1,p2);
     traverse(p3);
     return 0;
 }
