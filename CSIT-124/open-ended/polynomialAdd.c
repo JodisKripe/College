@@ -92,19 +92,6 @@ int traverse(node *head){
     return count;
 }
 
-int count(node *head){
-    int count = 0;
-    node *temp=head;
-    if(head==NULL){
-        return 0;
-    }
-    do{
-        count++;
-        temp=temp->next;
-    }while(temp->next !=head);
-    return count;
-}
-
 int main(){
     node *p1=NULL,*p2=NULL,*p3=NULL;
     printf("Enter the first polynomial:");

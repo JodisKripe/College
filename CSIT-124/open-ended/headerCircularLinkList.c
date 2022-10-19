@@ -160,29 +160,6 @@ int main(){
         scanf("%d",&choice);
     }
     temp->next=head;
-    /*node *newnode;
-    node *newnode2;
-    node *newnode3;
-    node *newnode4;
-    newnode = (node *)malloc(sizeof(node));
-    newnode2 = (node *)malloc(sizeof(node));
-    newnode3 = (node *)malloc(sizeof(node));
-    newnode4 = (node *)malloc(sizeof(node));
-    head=newnode;
-    newnode->data=1;
-    newnode->next=newnode2;
-    newnode2->data=2;
-    newnode2->next=newnode3;
-    newnode3->data=3;
-    newnode3->next=newnode4;
-    newnode4->data=4;
-    newnode4->next=head;
-    node *temp=head;
-    do{
-    printf("%d",temp->data);
-    temp=temp->next;
-    }while(temp!=head);
-    */
     while(1){
         printf("%d",count(head));
         printf("\n\n1. Insert at position\n2. Delete from position\n3. Traverse\n4. Exit\n$");
