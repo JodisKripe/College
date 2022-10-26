@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdbool.h>
 
 typedef struct node node;
 
@@ -9,95 +10,101 @@ struct node{
     struct node *next;
 };
 
-void makePol(node *head){
+node* makePol(node *head){
     node *temp=head;
-    node *newNode;
-    newNode=(node *)malloc(sizeof(node));
-    newNode->next=NULL;
-    int choice=1,coeff,exp;
+    int choice=1;
+    printf("Enter the coefficient and exponent of the polynomial in decreasing order of exponent"); 
     while(choice){
-        printf("Enter the coefficient:");
-        scanf("%d",&coeff);
-        printf("Enter the exponent:");
-        scanf("%d",&exp);
-        if(head==NULL){
-            newNode->coeff=coeff;
-            newNode->exp=exp;
-            head=temp=newNode;
-            return;
+        node *newNode;
+        newNode=(node *)malloc(sizeof(node));
+        newNode->coeff=0;
+        newNode->exp=0;
+        newNode->next=NULL;
+        printf("\n\nEnter the coefficient: ");
+        scanf("%d",&newNode->coeff);
+        printf("Enter the exponent: ");
+        scanf("%d",&newNode->exp);
+        if(temp==NULL){
+            printf("init");
+            head=newNode;
+            temp=head;
+            continue;
         }
-        do{
-            if(temp->exp==exp){
-                temp->coeff+=coeff;
-                return;
-            }
-            temp=temp->next;
-        }while(temp->next->exp>=exp);
-        newNode->coeff=coeff;
-        newNode->exp=exp;
-        newNode->next=temp->next;
         temp->next=newNode;
-        printf("Do you want to continue?(1/0)");
-        scanf("%d,&choice");
+        temp=temp->next;
+        printf("Do you want to continue? (1/0): ");
+        scanf("%d",&choice);
     }
+    printf("Polynomial created\n");
+    /*node *temp2=head;
+    do{
+        printf("%dx^%d +",temp2->coeff,temp2->exp);
+        temp2=temp2->next;
+    }while(temp2!=NULL);
+    */
+    return head;
+    
 }
-
-node* add(node *p1, node *p2){
-    node *temp1=p1,*temp2=p2;
-    node *newNode;
-    newNode=(node *)malloc(sizeof(node));
-    newNode->next=NULL;
-    while(temp1!=NULL && temp2!=NULL){
-        if(temp1->exp==temp2->exp){
-            newNode->coeff=temp1->coeff+temp2->coeff;
-            newNode->exp=temp1->exp;
-            temp1=temp1->next;
-            temp2=temp2->next;
+    
+node* add(node* P1, node* P2){
+    node* p1=P1;
+    node* p2=P2;
+    node* p3=NULL;
+    node* temp=p3;
+    while(p1!=NULL && p2!=NULL){
+        node* newNode;
+        newNode=(node *)malloc(sizeof(node));
+        newNode->coeff=0;
+        newNode->exp=0;
+        newNode->next=NULL;
+        if(p1->exp==p2->exp){
+            newNode->coeff=p1->coeff+p2->coeff;
+            newNode->exp=p1->exp;
+            p1=p1->next;
+            p2=p2->next;
         }
-        else if(temp1->exp>temp2->exp){
-            newNode->coeff=temp1->coeff;
-            newNode->exp=temp1->exp;
-            temp1=temp1->next;
+        else if(p1->exp>p2->exp){
+            newNode->coeff=p1->coeff;
+            newNode->exp=p1->exp;
+            p1=p1->next;
         }
         else{
-            newNode->coeff=temp2->coeff;
-            newNode->exp=temp2->exp;
-            temp2=temp2->next;
+            newNode->coeff=p2->coeff;
+            newNode->exp=p2->exp;
+            p2=p2->next;
         }
-        newNode=newNode->next;
+        if(p3==NULL){
+            p3=newNode;
+            temp=p3;
+            continue;
+        }
+        temp->next=newNode;
+        temp=temp->next;
     }
-    while(temp1!=NULL){
-        newNode->coeff=temp1->coeff;
-        newNode->exp=temp1->exp;
-        temp1=temp1->next;
-        newNode=newNode->next;
+    while(p2!=NULL){
+        temp->next=p2;
+        p2=p2->next;
     }
-    while(temp2!=NULL){
-        newNode->coeff=temp2->coeff;
-        newNode->exp=temp2->exp;
-        temp2=temp2->next;
-        newNode=newNode->next;
-    }
-    return newNode;
+    return p3;
 }
 
-int traverse(node *head){
+void traverse(node *head){
+    printf("\n");
     node *temp=head;
-    int count=0;
     do{
-        printf("%dx^%d",temp->coeff,temp->exp);
+        printf("%dx^%d +",temp->coeff,temp->exp);
         temp=temp->next;
-        count++;
     }while(temp!=NULL);
-    return count;
+    return;
 }
 
 int main(){
     node *p1=NULL,*p2=NULL,*p3=NULL;
     printf("Enter the first polynomial:");
-    makePol(p1);
+    p1=makePol(p1);
     traverse(p1);
-    makePol(p2);
+    p2=makePol(p2);
+    traverse(p2);
     p3=add(p1,p2);
     traverse(p3);
     return 0;
