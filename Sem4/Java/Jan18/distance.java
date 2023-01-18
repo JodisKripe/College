@@ -22,5 +22,6 @@ class distance{
             temp = sc.nextInt();
             choice = (temp==1)?true:false;
         }
+        sc.close();
     }
 }
