@@ -16,6 +16,7 @@ class pattern{
                 }
                 System.out.println();
             }
+            counter=1;
             System.out.println("\n\nDo you want to continue? 1 for yes and 0 for no");
             temp = sc.nextInt();
             choice = (temp==1)?true:false;
