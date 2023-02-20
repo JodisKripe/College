@@ -1,0 +1,2 @@
+cat is used to write files.
+cat is also used to read files.

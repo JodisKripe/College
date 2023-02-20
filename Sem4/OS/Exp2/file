@@ -1,0 +1,11 @@
+#!/bin/bash
+
+echo "Hello World"
+age=20
+echo "My age is $age"
+
+echo "Today's date is `date`"
+echo "15-7" | bc
+
+read team
+echo "I love the $team"
