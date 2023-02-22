@@ -1,6 +1,7 @@
 import java.util.*;
 
 // for i in {1..310};do echo $i;done | tr "\n" " " | xclip -selection clipboard
+// Extra comment
 
 class temperatureCatalog{
     public static void main(String args[]){
@@ -35,7 +36,7 @@ class temperatureCatalog{
             }
         }
         System.out.println("The maximum temperature is "+max+" on day "+(maxday+1)+" in city "+(maxcity+1));
-        System.out.println("The minimum temperature is "+min+" on day "+(minday+1)+" in city "+(mincity+1));
+        System.out.println("The minimum temperature is "+min+" on day "+(minday+1)+" in city  "+(mincity+1));
 
     }
 }
