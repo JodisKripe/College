@@ -1,7 +1,7 @@
 // WAP to implement a priority process queue with burst time and arrival time and compute Waiting time and Turn around time
-#include <iostream>
-
 // 0 0 10 2 1 1 6 5 2 3 2 3 3 5 4 1
+
+#include <iostream>
 
 using namespace std;
 
@@ -49,5 +49,5 @@ int main()
         awt+=wt[i];
     }
     awt = awt/4;
-    cout<<"\n\n\n\n"<<awt;
+    cout<<"\n\nAverage Waiting Time: "<<awt<<endl;
 }
