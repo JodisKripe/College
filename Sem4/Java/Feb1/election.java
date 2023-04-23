@@ -1,6 +1,6 @@
 // code to read an array of votes and classify them as valid or invalid and assign a ballot number
 
-import java.util.*
+import java.util.*;
 
 class election{
     public static void main(String args[]){
