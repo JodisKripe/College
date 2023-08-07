@@ -2,8 +2,6 @@
 
 using namespace std;
 
-// WAP to write a quick sort program
-
 void swap(int &a, int &b) {
     int temp = a;
     a = b;

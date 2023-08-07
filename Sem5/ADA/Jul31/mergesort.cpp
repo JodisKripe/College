@@ -2,8 +2,6 @@
 
 using namespace std;
 
-// WAP to write a merge sort program
-
 void merge(int arr[], int low, int mid, int high) {
     int n1 = mid - low + 1; //1
     int n2 = high - mid; //1
