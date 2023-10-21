@@ -108,6 +108,9 @@ int main() {
         }
         if (valid_placement) {
             int col = rand() % C;
+            if(row == 0 && col == 0){
+                continue;
+            }
             matrix[row][col] = 1; // Place a dragon
             dragons_placed++;
         }
@@ -130,13 +133,13 @@ int main() {
                 temp_matrix[j][k] = matrix[j][k];
             }
         }
-        for(int j=0; j < R; j++){
-            for(int k=0; k < C; k++){
-                temp_matrix[j][k] = matrix[j][k];
-                cout << temp_matrix[j][k] << " ";
-            }
-            cout << endl;
-        }
+        // for(int j=0; j < R; j++){
+        //     for(int k=0; k < C; k++){
+        //         temp_matrix[j][k] = matrix[j][k];
+        //         cout << temp_matrix[j][k] << " ";
+        //     }
+        //     cout << endl;
+        // }
         int path1 = moveLeft(row, col, temp_matrix, dragons_left, 0);
         int path2 = moveRight(row, col, temp_matrix, dragons_left, 0);
         int path3 = moveDown(row, col, temp_matrix, dragons_left, 0);
@@ -144,8 +147,8 @@ int main() {
         if(smallest_path < shortest_path) {
             shortest_path = smallest_path;
         }
-        cout << "Shortest path: " << shortest_path << endl;
     }
+    cout << "Shortest path: " << shortest_path << endl;
     return 0;
 }
 
