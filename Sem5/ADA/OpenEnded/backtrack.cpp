@@ -24,7 +24,6 @@ int moveLeft(int row, int col, int temp_matrix[MAXN][MAXN], int dragons_left, in
     }
     if (temp_matrix[row][col - 1] == 1)
     {
-        temp_matrix[row][col - 1] = 0;
         dragons_left--;
     }
     path_length++;
@@ -45,7 +44,6 @@ int moveDown(int row, int col, int temp_matrix[MAXN][MAXN], int dragons_left, in
     }
     if (temp_matrix[row + 1][col] == 1)
     {
-        temp_matrix[row + 1][col] = 0;
         dragons_left--;
     }
     path_length++;
@@ -67,7 +65,6 @@ int moveRight(int row, int col, int temp_matrix[MAXN][MAXN], int dragons_left, i
     }
     if (temp_matrix[row][col + 1] == 1)
     {
-        temp_matrix[row][col + 1] = 0;
         dragons_left--;
     }
     path_length++;
