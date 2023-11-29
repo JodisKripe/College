@@ -271,9 +271,9 @@ gradual change in the status of a thing
 
 ## i verbs
 samui --> samuku narimasu --> has become cold
-yasui --> yasukunarimasu --> has become cheap
+yasui --> yasuku narimasu --> has become cheap
 nemui --> nemuku narimasu --> has become sleepy
-kurai --> krukanarimashita --> had become dark
+kurai --> kuraku narimashita --> had become dark
 
 ## na verbs
 suki ni narimasu --> started to like it
