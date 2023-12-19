@@ -33,7 +33,7 @@ class stack {
 
         void push(int val) {
             if (isFull()) {
-                cout << "Stack Overflow" << std::endl;
+                cout << "Stack Overflow" << endl;
             } else {
                 top++;
                 arr[top] = val;
@@ -43,7 +43,7 @@ class stack {
 
         int pop() {
             if (isEmpty()) {
-                cout << "Stack Underflow" << std::endl;
+                cout << "Stack Underflow" << endl;
                 return 0;
             } else {
                 int popValue = arr[top];
