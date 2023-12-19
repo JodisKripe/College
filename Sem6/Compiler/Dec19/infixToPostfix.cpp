@@ -58,26 +58,6 @@ class stack {
             return (top + 1);
         }
 
-        int peek(int pos) {
-            if (isEmpty()) {
-                cout << "Stack Underflow" << std::endl;
-                return 0;
-            } else {
-                return arr[pos];
-            }
-        }
-
-        void change(int pos, int val) {
-            arr[pos] = val;
-            cout << "Value changed at location " << pos << std::endl;
-        }
-
-        void display() {
-            std::cout << "All values in the Stack are " << std::endl;
-            for (int i = 4; i >= 0; i--) {
-                cout << arr[i] << std::endl;
-            }
-        }
 };
 
 
