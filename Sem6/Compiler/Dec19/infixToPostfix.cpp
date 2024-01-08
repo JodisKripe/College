@@ -61,12 +61,10 @@ class stack {
 };
 
 
-// Function to check if a character is an operator
 bool isOperator(char c) {
     return (c == '+' || c == '-' || c == '*' || c == '/' || c == '^');
 }
 
-// Function to get the precedence of an operator
 int getPrecedence(char op) {
     if (op == '+' || op == '-')
         return 1;
@@ -77,7 +75,6 @@ int getPrecedence(char op) {
     return 0;
 }
 
-// Function to convert infix expression to postfix
 string infixToPostfix(const string& infix) {
     string postfix;
     stack stack;
@@ -94,7 +91,7 @@ string infixToPostfix(const string& infix) {
                 postfix += stack.topchar;
                 stack.pop();
             }
-            stack.pop(); // Discard the '('
+            stack.pop();
         } else if (isOperator(c)) {
             cout << c<<" " << stack.topchar <<" " << !stack.isEmpty()<< getPrecedence(stack.topchar) << getPrecedence(c) << endl;
             while (!stack.isEmpty() && getPrecedence(stack.topchar) >= getPrecedence(c)) {
