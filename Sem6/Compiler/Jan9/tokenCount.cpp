@@ -7,7 +7,7 @@ int main() {
     ifstream inputFile("abc.txt");
     ofstream outputFile("copy_abc.txt");
     char ch;
-    int tokens = 0;
+    int sepTokens = 0;
 
     if (inputFile.is_open() && outputFile.is_open()) {
         int count =1 ;
@@ -28,15 +28,16 @@ int main() {
             }
             if (some == ' ' || some == '\n'){
                 if(count){    
-                    tokens++;
+                    sepTokens++;
                 }
                 cout<<"TOKEN";
             }
             lastChar = ch;
             outputFile.put(ch);
         }
+        sepTokens++;
         cout << "File copied successfully." << endl;
-        cout<<"total tokens are " << tokens << endl;
+        cout<<"total tokens are " << sepTokens << endl;
         inputFile.close();
         outputFile.close();
     } else {
