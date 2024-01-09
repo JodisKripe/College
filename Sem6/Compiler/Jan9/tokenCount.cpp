@@ -11,16 +11,28 @@ int main() {
 
     if (inputFile.is_open() && outputFile.is_open()) {
         int count =1 ;
+        char lastChar;
         while (inputFile.get(ch)) {
             char some = ch;
-            cout<<ch;            
+            cout<<ch;      
+            if (some == '\"' && count){
+                count =0;
+            }
+            else if (some == '\"' && !count){
+                count =1;
+            }      
+            if (lastChar == '\n' || lastChar == ' '){
+                if(some == ' ' || some == '\n'){
+                    continue;
+                }
+            }
             if (some == ' ' || some == '\n'){
                 if(count){    
                     tokens++;
                 }
                 cout<<"TOKEN";
             }
-
+            lastChar = ch;
             outputFile.put(ch);
         }
         cout << "File copied successfully." << endl;

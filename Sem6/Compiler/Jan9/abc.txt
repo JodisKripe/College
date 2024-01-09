@@ -1,4 +1,7 @@
-One
-Two
-Three
-Anita Max Wynn
+#import <iostream.h>
+
+using namespace std;
+
+int main(){
+    cout << "Hello World" << endl;
+}
