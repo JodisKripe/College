@@ -26,7 +26,7 @@ int main() {
                     continue;
                 }
             }
-            if (some == ' ' || some == '\n'){
+            if (some == ' ' || some == '\n' || some == '\t'){
                 if(count){    
                     sepTokens++;
                 }
