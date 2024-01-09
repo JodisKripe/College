@@ -21,8 +21,8 @@ int main() {
             else if (some == '\"' && !count){
                 count =1;
             }      
-            if (lastChar == '\n' || lastChar == ' '){
-                if(some == ' ' || some == '\n'){
+            if (lastChar == '\n' || lastChar == ' ' || lastChar == '\t'){
+                if(some == ' ' || some == '\n' || some == '\t'){
                     continue;
                 }
             }
