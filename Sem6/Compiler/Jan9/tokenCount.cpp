@@ -13,6 +13,7 @@ int main() {
         int count =1 ;
         char lastChar;
         while (inputFile.get(ch)) {
+            outputFile.put(ch);
             char some = ch;
             cout<<ch;      
             if (some == '\"' && count){
@@ -33,7 +34,7 @@ int main() {
                 cout<<"TOKEN";
             }
             lastChar = ch;
-            outputFile.put(ch);
+            
         }
         sepTokens++;
         cout << "File copied successfully." << endl;

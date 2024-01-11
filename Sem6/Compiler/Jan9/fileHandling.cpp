@@ -12,6 +12,7 @@ int main() {
     if (inputFile.is_open() && outputFile.is_open()) {
         int count =1 ;
         while (inputFile.get(ch)) {
+            outputFile.put(ch);
             char some = ch;
             cout<<ch;            
             if (some == ' ' || some == '\n'){
