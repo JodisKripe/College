@@ -1,0 +1,3 @@
+[submodule "Sem6/SoftwareEngineering/CustomsManagement"]
+	path = Sem6/SoftwareEngineering/CustomsManagement
+	url = git@github.com:JodisKripe/CustomsManagement.git
