@@ -4,67 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "743ec3e9ab461c45",
+        "id": "d5bfdbfab961c8e7",
         "type": "tabs",
         "children": [
           {
-            "id": "3006138f83903cdc",
+            "id": "5bc1266ea64ec943",
             "type": "leaf",
             "state": {
-              "type": "empty",
+              "type": "graph",
               "state": {}
             }
-          },
-          {
-            "id": "2146961dc97948a1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Errors ( infixToPostfix.cpp ).md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ee230c40096a7add",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Errors ( infixToPostfix.cpp ).md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "053828bd1141dad5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Errors ( FileHandling.cpp).md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e5d98e5aabed272d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Errors (tokenCount.cpp).md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -130,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Errors (tokenCount.cpp).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Errors (tokenCount.cpp).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -169,17 +118,14 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Errors (tokenCount.cpp).md"
-              }
+              "state": {}
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -191,8 +137,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e5d98e5aabed272d",
+  "active": "5bc1266ea64ec943",
   "lastOpenFiles": [
+    "Untitled.canvas",
+    "Untitled",
     "Pasted image 20240109104801.png",
     "Errors ( FileHandling.cpp).md",
     "Errors (tokenCount.cpp).md",
