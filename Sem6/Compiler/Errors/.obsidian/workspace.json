@@ -11,8 +11,12 @@
             "id": "5bc1266ea64ec943",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Errors ( FileHandling.cpp).md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Errors ( FileHandling.cpp).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Errors ( FileHandling.cpp).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Errors ( FileHandling.cpp).md"
+              }
             }
           }
         ]
@@ -139,11 +147,11 @@
   },
   "active": "5bc1266ea64ec943",
   "lastOpenFiles": [
+    "Errors (tokenCount.cpp).md",
     "Untitled.canvas",
     "Untitled",
     "Pasted image 20240109104801.png",
     "Errors ( FileHandling.cpp).md",
-    "Errors (tokenCount.cpp).md",
     "Pasted image 20240109094959.png",
     "Errors ( infixToPostfix.cpp ).md",
     "Pasted image 20231219102913.png",
