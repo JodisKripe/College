@@ -5,6 +5,7 @@ void pong(){
 }
 
 int main(){
-    cout << "Hello World" << endl ;
+    char c = 'l';
+    cout << "Hello World" << c << endl ;
     pong();
 }

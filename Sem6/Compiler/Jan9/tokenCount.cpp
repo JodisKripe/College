@@ -15,7 +15,7 @@ int main() {
         while (inputFile.get(ch)) {
             outputFile.put(ch);
             char some = ch;
-            cout<<ch;      
+            //cout<<ch;      
             if (some == '\"' && count){
                 count =0;
             }

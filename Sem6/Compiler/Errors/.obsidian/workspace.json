@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "5155eb8ac4529fa0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Errors ( characterisation.cpp ).md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Errors (tokenCount.cpp).md",
+                "file": "Errors ( characterisation.cpp ).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Errors (tokenCount.cpp).md",
+                "file": "Errors ( characterisation.cpp ).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Errors (tokenCount.cpp).md"
+                "file": "Errors ( characterisation.cpp ).md"
               }
             }
           }
@@ -145,11 +158,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5bc1266ea64ec943",
+  "active": "5155eb8ac4529fa0",
   "lastOpenFiles": [
+    "Pasted image 20240116105810.png",
+    "Errors (tokenCount.cpp).md",
+    "Errors ( characterisation.cpp ).md",
     "Errors ( infixToPostfix.cpp ).md",
     "Errors ( FileHandling.cpp).md",
-    "Errors (tokenCount.cpp).md",
     "Untitled.canvas",
     "Untitled",
     "Pasted image 20240109104801.png",
