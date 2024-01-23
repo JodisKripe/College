@@ -1,0 +1,15 @@
+using namespace std;
+
+void pong() {
+    cout << pong << endl ;
+}
+
+/
+
+int main() {
+    char c = 'l';
+    cout << "Hello World" << c << endl ;
+    pong() ;
+}
+
+//
