@@ -1,7 +1,7 @@
 #include <iostream>
 #include <fstream>
-
-// Write code to read a file containing grammar and remove left recursion from it
+#include <string>
+#include <vector>
 
 using namespace std;
 
