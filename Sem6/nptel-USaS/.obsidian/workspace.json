@@ -8,43 +8,55 @@
         "type": "tabs",
         "children": [
           {
-            "id": "032990bf3b84ec45",
+            "id": "1fa3af900fe0756d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Week1/Introduction to Computer Security.md",
+                "file": "Week3/IPSec1.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "c9e363702b63ff4e",
+            "id": "5f7a42edd297d117",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Week1/Malicious Software.md",
+                "file": "Week3/IPSec2.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "b478b47f02113515",
+            "id": "a873b3a53496967b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Week1/Introduction to Computer Security.md",
+                "file": "Week4/Security and Usability.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b778dff3e85823c2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Week1/Social Engineering and Phishing Attacks.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -83,6 +95,18 @@
             }
           },
           {
+            "id": "4d0131972ad81c7c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Week3/TLS 1.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "7085bddf0a1baa76",
             "type": "leaf",
             "state": {
@@ -110,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Week1/Introduction to Computer Security.md",
+                "file": "Week3/IPSec2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Week1/Introduction to Computer Security.md",
+                "file": "Week3/IPSec2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Week1/Introduction to Computer Security.md"
+                "file": "Week3/IPSec2.md"
               }
             }
           }
@@ -171,22 +195,36 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b478b47f02113515",
+  "active": "5f7a42edd297d117",
   "lastOpenFiles": [
-    "Week1/Malicious Software.md",
+    "Week4/Security and Usability.md",
     "Week1/Social Engineering and Phishing Attacks.md",
-    "Pasted image 20240121171722.png",
-    "Pasted image 20240121165741.png",
-    "Pasted image 20240121165636.png",
-    "Pasted image 20240120220613.png",
-    "Pasted image 20240120220522.png",
-    "Pasted image 20240120215432.png",
-    "Pasted image 20240120214722.png",
-    "Pasted image 20240120213258.png",
-    "Pasted image 20240120212748.png",
-    "Pasted image 20240120211645.png",
+    "Week1/Malicious Software.md",
     "Week1/Introduction to Computer Security.md",
+    "Week4/User Privacy and Compromise.md",
+    "Pasted image 20240323003805.png",
+    "Pasted image 20240323003538.png",
+    "Pasted image 20240323002751.png",
+    "Pasted image 20240323002439.png",
+    "Pasted image 20240323002221.png",
+    "Pasted image 20240323002028.png",
+    "Pasted image 20240323001934.png",
+    "Pasted image 20240323001700.png",
+    "Pasted image 20240323001612.png",
+    "Pasted image 20240323001525.png",
+    "Week3/IPSec2.md",
+    "Week4",
+    "Week3/IPSec1.md",
+    "Week3/TLS 1.md",
+    "Week3/TLS2.md",
+    "Week3/Email Security 1.md",
     "Welcome.md",
+    "Week2/OSS3.md",
+    "Week3",
+    "Week2/OSS4.md",
+    "Week2/OSS2.md",
+    "Week2/Operating System Security.md",
+    "Week2",
     "Week1"
   ]
 }

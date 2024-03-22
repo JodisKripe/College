@@ -1,0 +1,9 @@
+def xor_gate(a, b):
+    return (a and not b) or (not a and b)
+
+
+# cases
+print(xor_gate(False, False))
+print(xor_gate(False, True))
+print(xor_gate(True, False))
+print(xor_gate(True, True))
