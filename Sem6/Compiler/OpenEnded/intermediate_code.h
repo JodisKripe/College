@@ -59,13 +59,13 @@ string intermediate_code(string inputString)
     return result;
 }
 
-int main()
-{
-    string inputString = "";
-    ifstream fin("input.txt");
-    // set the input string to the string in the file
-    fin >> inputString;
-    // call the lexical function
-    intermediate_code(inputString);
-    return 0;
-}
+// int main()
+// {
+//     string inputString = "";
+//     ifstream fin("input.txt");
+//     // set the input string to the string in the file
+//     fin >> inputString;
+//     // call the lexical function
+//     intermediate_code(inputString);
+//     return 0;
+// }

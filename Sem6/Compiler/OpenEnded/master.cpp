@@ -1,6 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include "lexical.h"
+#include "intermediate_code.h"
 #include <string.h>
 
 using namespace std;
@@ -13,5 +14,8 @@ int main()
     fin >> inputString;
     // call the lexical function
     lexical(inputString);
+    string intermediateCode = intermediate_code(inputString);
+    cout << intermediateCode << endl;
+
     return 0;
 }

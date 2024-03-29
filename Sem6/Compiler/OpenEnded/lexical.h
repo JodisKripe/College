@@ -57,7 +57,6 @@ int lexical(string inputString)
     vector<char> id;
     string str;
     cout << "Enter string: ";
-    cin >> str;
     str = inputString;
     int i = 0;
     string word = "";
