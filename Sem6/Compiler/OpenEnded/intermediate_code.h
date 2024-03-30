@@ -4,24 +4,6 @@
 #include <vector>
 #include <map>
 #include <regex.h>
-/*
-Write code to take input from a file and generate intermediate three address code for inputs like:
-a=b+(c+d)
-
-The output should be:
-AND
-
-t1 = c + d
-t2 = b + t1
-a = t2
-
-respectively
-
-precedence of operators is as follows:
-1. ( and ) - highest precedence
-2. + and -
-
-*/
 
 using namespace std;
 
