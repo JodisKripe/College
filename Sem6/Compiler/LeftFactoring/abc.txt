@@ -1,0 +1,19 @@
+using namespace std;
+
+void pong() {
+    cout << pong << endl ;
+}
+
+// Oo main
+
+int main() {
+    char c = 'l',d = 'f';
+    int jop,poj;
+    float om;
+    cout << "Hello World" << c << endl ;
+    pong() ;
+}
+
+/*
+Ching chang hanji
+*/

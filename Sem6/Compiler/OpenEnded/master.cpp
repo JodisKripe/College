@@ -19,9 +19,9 @@ int main()
     cout << "Lexical Analysis:\n";
     lexical(inputString);
     cout << "\nSyntax Analysis:\n";
-    syntax(inputString);
+    // syntax(inputString);
     cout << "\nSemantic Analysis:\n";
-    semantic(inputString);
+    // semantic(inputString);
     string intermediateCode = intermediate_code(inputString);
     cout << "\nIntermediate Code:\n"
          << intermediateCode << "\n\nThree Address Code generation:\n";

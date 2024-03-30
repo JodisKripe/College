@@ -54,9 +54,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "17ddbd7cbd827484",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Errors ( left factoring.cpp).md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -122,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Errors ( variable_count.cpp).md",
+                "file": "Errors ( left factoring.cpp).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Errors ( variable_count.cpp).md",
+                "file": "Errors ( left factoring.cpp).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Errors ( variable_count.cpp).md"
+                "file": "Errors ( left factoring.cpp).md"
               }
             }
           }
@@ -182,12 +194,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a068f0b1c1f1cf05",
+  "active": "17ddbd7cbd827484",
   "lastOpenFiles": [
+    "Pasted image 20240330200614.png",
+    "Pasted image 20240330200320.png",
+    "Pasted image 20240330200232.png",
+    "Errors ( variable_count.cpp).md",
+    "Errors ( left factoring.cpp).md",
     "Pasted image 20240130094129.png",
     "Pasted image 20240130094052.png",
     "Errors ( function_characterization.cpp).md",
-    "Errors ( variable_count.cpp).md",
     "Pasted image 20240123104234.png",
     "Errors ( characterisation.cpp ).md",
     "Errors (tokenCount.cpp).md",
@@ -199,9 +215,6 @@
     "Pasted image 20240109104801.png",
     "Pasted image 20240109094959.png",
     "Pasted image 20231219102913.png",
-    "Pasted image 20231219102352.png",
-    "Pasted image 20231219102308.png",
-    "Pasted image 20231219102222.png",
-    "Pasted image 20231219102124.png"
+    "Pasted image 20231219102352.png"
   ]
 }
