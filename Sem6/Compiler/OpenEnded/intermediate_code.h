@@ -9,7 +9,7 @@ using namespace std;
 
 string intermediate_code(string inputString)
 {
-    // sample inputString = "a=b+((d+e)+c)"
+    // sample inputString = "a=b+((d+(e+f))+c)"
     string workingString = inputString;
     map<int, string> temp;
     string result = "";
@@ -51,3 +51,6 @@ string intermediate_code(string inputString)
 //     intermediate_code(inputString);
 //     return 0;
 // }
+// t1=d+e
+// t2=t1+c
+// a=b+t2
